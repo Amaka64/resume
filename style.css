@@ -1,0 +1,98 @@
+/* CSS RESPONSIVENES */
+*{
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+.row::after{
+    content: "" ;
+    clear: both;
+    display: table;
+}
+@media only screen and (max-width:768px){
+    [class*="col-"]{
+        width: 100%;
+    }
+    .portfolio{
+        text-align: center;
+    }
+    .navlink a{
+        display: block;
+        font-size: 30px;
+    }
+    .amaka{
+        font-size: -16px;
+    }
+}
+
+/* CSS RESPONSIVENESS ENDS */
+
+body{
+background-image: linear-gradient(90deg,aqua,rgba(0, 0, 0, 0.756));
+}
+.portfolio{
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.main{
+    background-color: black;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 25px;
+    color: aliceblue;
+}
+.navlink a{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.navlink a:hover{
+    color: crimson;
+}
+.amaka{
+    font-size: 22px;
+    /* padding-top: 10%; */
+}
+
+button{
+    border: none;
+    width: 150px;
+    padding: 6px;
+    background-color: aqua;
+    border-radius: 20px;
+}
+
+button:hover{
+    box-shadow: 3px 3px 3px aquamarine;
+    border: 2px solid aquamarine;
+    background-color: black;
+    color: aquamarine;
+}
+
+i{
+    color: aqua;
+    padding: 7px;
+}
+.imgbg{
+    /* background-color: aqua; */
+    padding: 10px;
+    border-radius: 50px;
+}
